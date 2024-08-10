@@ -30,15 +30,17 @@ We define gene fusion as a chromosomal rearrangement that combines two genes int
 Our experiments is based on the files into the *dataset* folder organized in: *dataset_chimeric* that contains the chimeric sequences and *dataset_no_chimeric* that contains seuqneces of no fused transcripts.
 
 I modelli sono (descrizione + vedere tabella)
+The models are (i) the 4 variants (one for each criterion) of the method
+for list-embedding (MLE):
+- **MLE_check** (MLE with Check interval criterion),
+- **MLE_no_check** (MLE with No Check interval criterion), MLE_repetitive (MLE with Repetitive criterion),
+- **MLE_ensemble** (MLE with Ensemble criterion);
+(ii) the 2 variants (basic and generalized) of the method for graph-list embedding (MGE)
+- **MGE_basic** (MGE with basic experiment),
+- **MGE_generalized** (MGE with generalizedexperiment);
+(iii) the “full” machine learning-based method (**MML**) proposed in.
 
-The implemented models are:
-- **MLE Check**
-- **MLE No Check**
-- **MLE Repetitive**
-- **MLE Ensemble**
-- **MGE Basic**
-- **MGE Generalized**
-- **MML**
+
 --------------------------------------------------------------------------------------------------------------------
 Parte eduardo:
 requirements
