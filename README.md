@@ -168,10 +168,15 @@ Install the libraries with the following command:
    2) COMMAND THAT USES TEST RESULT_FUSION AND GENERATES FUSION SCORE AND STATISTICS FILES FOR DATASET_CHIMERIC AND DATASET_NON_CHIMERIC
        - ```python testing.py --step test_result --path1 testing/chimeric/ --path2 testing/non_chimeric/ --fasta1 dataset_chimeric1.fastq --fasta2 dataset_non_chimeric1.fastq  --best_model RF_CFL_ICFL_COMB-30_K8.pickle --type_factorization CFL_ICFL_COMB-30 --k_value 8 -n 4```
 
-Va chiedo ad eduardo come esplicitare come far correre, no check e gli altri nella tabella ( dare la pissibilta da comand line di far correre i test che si boglino)
 -------------------------------------------------
-Parte Dino
-mettere sorgente in .py
+##MGE and MML Experiments
+To run the MGE and the MML experiments, the .ipynb file is formated in order to run the experiment in succession.
+The experimenst takes in input the fingeprints files generable from the previous explained procedure.
+
+Install the libraries with the following command:
+   
+      ```pip install -r requirements_MGE_MLL.txt```
+
 
 
 
