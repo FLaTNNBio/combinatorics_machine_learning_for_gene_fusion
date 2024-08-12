@@ -166,7 +166,7 @@ Install the libraries with the following command:
        - ```python testing.py --step test_result --path1 testing/chimeric/ --path2 testing/non_chimeric/ --fasta1 dataset_chimeric1.fastq --fasta2 dataset_non_chimeric1.fastq  --best_model RF_CFL_ICFL_COMB-30_K8.pickle --type_factorization CFL_ICFL_COMB-30 --k_value 8 -n 4```
 
 -------------------------------------------------
-##MGE and MML Experiments
+## MGE and MML Experiments
 To run the MGE and the MML experiments, the .ipynb file is formated in order to run the experiment in succession.
 The experimenst takes in input the fingeprints files generable from the previous explained procedure.
 
@@ -174,20 +174,29 @@ Install the libraries with the following command:
    
       ```pip install -r requirements_MGE_MLL.txt```
       
-To run the MGE experiments:
+To run the **MGE experiments**:
 
-      ```python MGE_experiment.py --balanced_bool <balance_flag> --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value>```
+      ``` python MGE_experiment.py --balanced_bool <balance_flag> --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value> ```
       
-  - balanced_bool: Specifies whether the dataset should be balanced. Set to True to balance, False otherwise.
-  - filename_fuse: Specifies the file containing the data with fused fingerprints. This file should be in text format.
-  - filename_no_fuse: Specifies the file containing the data without fused fingerprints. This file should be in text format.
-  - k: Specifies the length of the k-mer to be used in creating the graph. This is an integer value.
+  - --balanced_bool: Specifies whether the dataset should be balanced. Set to True to balance, False otherwise.
+  - --filename_fuse: Specifies the file containing the data with fused fingerprints. This file should be in text format.
+  - --filename_no_fuse: Specifies the file containing the data without fused fingerprints. This file should be in text format.
+  - k: --Specifies the length of the k-mer to be used in creating the graph. This is an integer value.
       
   example:
       
-      ```python MGE_experiment.py --balanced_bool False --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k 4```
+      ``` python MGE_experiment.py --balanced_bool False --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k 4 ```
 
+To run **MLL Experiments**:
 
+       ``` python MLL_experiment.py --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value> ```
 
+  Parameters
+  - --filename_fuse: Path to the file containing fuse data.
+  - --filename_no_fuse: Path to the file containing no fuse data.
+  - --k: An integer representing the k-mer size for hypergraph creation.
 
+example:
+      
+      ``` python MLL_experiment.py --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k ```
 
