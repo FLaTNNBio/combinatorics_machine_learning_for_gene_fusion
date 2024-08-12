@@ -1,4 +1,4 @@
-# combinatorics_machine_learning_for_gene_fusion
+# Combinatorics Machine Learning for *Gene Fusion* Detection 
 --------------------------------------------------------------------------------------------------------------------
 **ABSTRACT**
 
