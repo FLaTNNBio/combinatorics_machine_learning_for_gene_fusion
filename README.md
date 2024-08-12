@@ -173,6 +173,10 @@ The experimenst takes in input the fingeprints files generable from the previous
 Install the libraries with the following command:
    
       ```pip install -r requirements_MGE_MLL.txt```
+To run the MGE experiments:
+      ```python MGE_experiment.py --balanced_bool <balance_flag> --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value>```
+      example:
+      ```python MGE_experiment.py --balanced_bool False --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k 4```
 
 
 
