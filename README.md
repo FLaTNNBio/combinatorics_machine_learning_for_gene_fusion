@@ -6,7 +6,7 @@ In the field of computational biology, the accurate mapping of RNA sequence read
 
 Combinatorics-ML-Gene-Fusion is an ambitious bioinformatics project designed to detect gene fusions of two genes within a single transcript. It explores a hybrid approach between the contexts of *Machine Learning* and *Combinatorics on Words*, relying on an efficient system of factorizations. The representations are expressed by *k-fingers*, which are k-mers extracted from a gene's *fingerprint* or signature. The project can be summarized in four main points:
 
-1) Generation of fingerprints or k-fingers by factorizing transcripts referring to genes from an arbitrarily sized gene panel.
+1) Generation of fingerprints/k-fingers by factorizing transcripts referring to genes from an arbitrarily gene panel.
 
 2) Training a model using a training dataset consisting of all labeled k-fingers with the origin gene. This allows us to assess their repetitiveness within the gene itself.
 
