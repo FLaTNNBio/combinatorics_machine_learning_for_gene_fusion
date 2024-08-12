@@ -14,7 +14,7 @@ We define *gene fusion* as a chromosomal rearrangement that combines two genes i
 Our experiments is based on the files into the *dataset* folder organized in: *dataset_chimeric* that contains the chimeric sequences and *dataset_no_chimeric* that contains sequences of no fused transcripts.
 
 The classification methods developed can be catgorized as follow:
-1) **MLE Based**. These methods are based on the idea that each sequencing read is represented by the list of 𝑘-fingers extracted by a *superimposed fingerprint*, and consists in the following 4 steps:
+1) **MLE based**. These methods are based on the idea that each sequencing read is represented by the list of 𝑘-fingers extracted by a *superimposed fingerprint*, and consists in the following 4 steps:
    
    1) Generation of fingerprints/k-fingers by factorizing transcripts referring to genes from an arbitrarily gene panel.
 
@@ -32,11 +32,10 @@ The classification methods developed can be catgorized as follow:
       - **MLE_repetitive** (MLE with Repetitive criterion),
       - **MLE_ensemble** (MLE with Ensemble criterion);
 
- 2) mge Based
-(ii) the 2 variants (basic and generalized) of the method for graph-list embedding (MGE)
-- **MGE_basic** (MGE with basic experiment),
-- **MGE_generalized** (MGE with generalizedexperiment);
-(iii) the “full” machine learning-based method (**MML**) proposed in.
+2) **MGE based**. Methods based on the idea that each read 𝑤 is represented by a *De Bruijn hypergraph* and built on the set of all the 𝑘-fingers extracted by a set of superimposed fingerprints for 𝑤
+   We definied 2 variants, *basic* and *generalized*:
+    - **MGE_basic** (MGE with basic experiment): This method uses *Graph Convolutional Network* (GCN)
+    - **MGE_generalized** (MGE with generalizedexperiment): This methos uses *Hypergraph Convolutional Network* (HGCN)
 
 
 --------------------------------------------------------------------------------------------------------------------
