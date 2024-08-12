@@ -178,10 +178,10 @@ To run the MGE experiments:
 
       ```python MGE_experiment.py --balanced_bool <balance_flag> --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value>```
       
-  --balanced_bool: Specifies whether the dataset should be balanced. Set to True to balance, False otherwise.
-  --filename_fuse: Specifies the file containing the data with fused fingerprints. This file should be in text format.
-  --filename_no_fuse: Specifies the file containing the data without fused fingerprints. This file should be in text format.
-  --k: Specifies the length of the k-mer to be used in creating the graph. This is an integer value.
+  -balanced_bool: Specifies whether the dataset should be balanced. Set to True to balance, False otherwise.
+  -filename_fuse: Specifies the file containing the data with fused fingerprints. This file should be in text format.
+  -filename_no_fuse: Specifies the file containing the data without fused fingerprints. This file should be in text format.
+  -k: Specifies the length of the k-mer to be used in creating the graph. This is an integer value.
       
   example:
       
