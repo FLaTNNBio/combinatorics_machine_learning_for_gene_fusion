@@ -24,13 +24,13 @@ The classification methods developed can be catgorized as follow:
 
    4) After assessing the expression levels of the two genes, calculating a fusion score to determine whether the read is chimeric (fusion of two genes) or non-chimeric (no gene fusion).
 
-Thanks to the generated results, we were able to measure with a certain precision how chimeric or non-chimeric a dataset was by adaptively thresholding it. This allowed us to identify the precise point in the dataset from which to extract as many chimeric reads as possible with an optimal compromise, resulting in a minimal decrease in metrics.  
-
-We defined 4 variants, each one corresponding to a specific criterion:
-  - **MLE_check** (MLE with Check interval criterion),
-  - **MLE_no_check** (MLE with No Check interval criterion),
-  - **MLE_repetitive** (MLE with Repetitive criterion),
-  - **MLE_ensemble** (MLE with Ensemble criterion);
+  Thanks to the generated results, we were able to measure with a certain precision how chimeric or non-chimeric a dataset was by adaptively thresholding it. This allowed us to identify the precise point in the    dataset from which to extract as many chimeric reads as possible with an optimal compromise, resulting in a minimal decrease in metrics.  
+  
+  We defined 4 variants, each one corresponding to a specific criterion:
+    - **MLE_check** (MLE with Check interval criterion),
+    - **MLE_no_check** (MLE with No Check interval criterion),
+    - **MLE_repetitive** (MLE with Repetitive criterion),
+    - **MLE_ensemble** (MLE with Ensemble criterion);
 
  2) mge Based
 (ii) the 2 variants (basic and generalized) of the method for graph-list embedding (MGE)
