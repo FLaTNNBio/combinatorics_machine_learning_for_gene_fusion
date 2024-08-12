@@ -39,14 +39,7 @@ The classification methods developed can be catgorized as follow:
 
 
 --------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
---------------------------------------------------------------------------------------------------------------------
-Parte eduardo:
-In order to run the MLE Experiments:
+## Istruction for MLE based experiments
 
 Install the libraries with the following command:
    
