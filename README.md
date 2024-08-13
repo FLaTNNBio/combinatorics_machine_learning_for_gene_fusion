@@ -43,7 +43,7 @@ The classification methods developed can be catgorized as follow:
 
 Install the libraries with the following command:
    
-      ```pip install -r requirements.txt```
+  <pre><code> pip install -r requirements.txt </code></pre>
  
 **information about options for various commands**:
 
