@@ -176,7 +176,7 @@ Install the libraries with the following command:
       
 To run the **MGE experiments**:
 
-      ``` python MGE_experiment.py --balanced_bool <balance_flag> --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value> ```
+  <pre><code> python MGE_experiment.py --balanced_bool <balance_flag> --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value> </code></pre>
       
   - --balanced_bool: Specifies whether the dataset should be balanced. Set to True to balance, False otherwise.
   - --filename_fuse: Specifies the file containing the data with fused fingerprints. This file should be in text format.
@@ -185,11 +185,11 @@ To run the **MGE experiments**:
       
   example:
       
-      ``` python MGE_experiment.py --balanced_bool False --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k 4 ```
+  <pre><code> python MGE_experiment.py --balanced_bool False --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k 4 </code></pre>
 
 To run **MLL Experiments**:
 
-       ``` python MLL_experiment.py --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value> ```
+  <pre><code> python MLL_experiment.py --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value> </code></pre>
 
   Parameters
   - --filename_fuse: Path to the file containing fuse data.
@@ -198,5 +198,5 @@ To run **MLL Experiments**:
 
 example:
       
-      ``` python MLL_experiment.py --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k ```
+<pre><code> python MLL_experiment.py --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k </code></pre>
 
