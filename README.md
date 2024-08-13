@@ -185,8 +185,11 @@ To run the **MGE experiments**:
       
   example:
       
-  <pre><code> python MGE_experiment.py --balanced_bool False --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k 4 </code></pre>
-
+  <pre><code> python MGE_experiment.py --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k 4 </code></pre>
+  
+  or
+  <pre><code> python MGE_experiment.py --balanced --filename_fuse /path/to/fingerprint_fuse.txt --filename_no_fuse /path/to/fingerprint_no_fuse.txt --k 4 </code></pre>
+  
 To run **MLL Experiments**:
 
   <pre><code> python MLL_experiment.py --filename_fuse <path_to_fuse_file> --filename_no_fuse <path_to_no_fuse_file> --k <k_value> </code></pre>
