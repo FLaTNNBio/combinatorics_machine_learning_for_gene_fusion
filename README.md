@@ -172,7 +172,7 @@ The experimenst takes in input the fingeprints files generable from the previous
 
 Install the libraries with the following command:
    
-      ```pip install -r requirements_MGE_MLL.txt```
+  <pre><code> pip install -r requirements_MGE_MLL.txt </code></pre>
       
 To run the **MGE experiments**:
 
