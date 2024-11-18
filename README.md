@@ -87,7 +87,7 @@ Install the libraries with the following command:
 
    3) **Important steps**
 
-      1) MOVE (MODEL) ```RF_type_factorization_K_value.pickle``` (example: ```RF_CFL_ICFL_COMB-30_K8.pickle```) from **src/training** to **Csrc/testing**
+      1) MOVE (MODEL) ```RF_type_factorization_K_value.pickle``` (example: ```RF_CFL_ICFL_COMB-30_K8.pickle```) from **src/training** to **src/testing**
   
       2) MOVE (REPORT MODEL)  ```RF_kfinger_clsf_report_type_factorization_K_value.csv``` (example: ```RF_kfinger_clsf_report_CFL_ICFL_COMB-30_K8.csv```) from **src/training** to **src/testing**
       
