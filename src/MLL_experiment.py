@@ -13,6 +13,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score, confusion_matrix
 import torch.nn.functional as F
 import argparse
+import os
 
 
 
@@ -296,4 +297,9 @@ if __name__ == "__main__":
             print(f"{metric}: {value:.4f}")
         else:
             print(f"{metric}:\n{value}")
+
+    save_path = './saved_models/'  # Change this to your desired folder
+    os.makedirs(save_path, exist_ok=True)
+    torch.save(model.state_dict(), os.path.join(save_path, f'model_MLL.pth'))
+    print(f"Model saved in '{save_path}' as 'model_MLL.pth'")
 
