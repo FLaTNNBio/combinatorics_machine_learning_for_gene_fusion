@@ -13,6 +13,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score, f1_score, precision_score, recall_score, confusion_matrix
 import random
 import argparse
+import os
 
 
 
@@ -507,3 +508,9 @@ if __name__ == "__main__":
         print(f"Test Precision: {precision:.4f}")
         print(f"Test Recall: {recall:.4f}")
         print(f"Confusion Matrix:\n{cm}")
+
+    save_path = './saved_models/'  # Change this to your desired folder
+    os.makedirs(save_path, exist_ok=True)
+    torch.save(model.state_dict(), os.path.join(save_path, f'model_MGE.pth'))
+    print(f"Model saved in '{save_path}' as 'model_MGE.pth'")
+
